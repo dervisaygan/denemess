@@ -11,6 +11,7 @@
     margin:0;
     padding:0;
     box-sizing: border-box;
+        cursor: default;
 }
 html{
    font-size: 10px;
@@ -73,8 +74,8 @@ nav{
 }
 .menu li{
  
-    margin-bottom: .5rem;
-    font-size: 2rem;
+    margin-bottom: 5px;
+    font-size: 10px;
     max-width: 100%;
     text-align: center;
     border: 1px solid #000;
@@ -84,7 +85,7 @@ nav{
     color:#fff;
     width: auto;
     height: auto;
-    padding:1rem 0;
+    padding:10px 0;
     
 }
 .menu li:hover {
@@ -217,6 +218,14 @@ main{
        width:10px;
    }
 }
+      @media screen and (min-height:1000px){
+
+.menu li{
+    margin-top:10px;
+}
+
+}
+
 @media screen and (max-width:160px){
     html{
         font-size: 6px;
