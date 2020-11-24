@@ -5,9 +5,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ZFCAKADEMİ</title>
-   
-  <style>
-   *{
+    <link rel="stylesheet" href="style.css">
+    <style>
+        *{
     margin:0;
     padding:0;
     box-sizing: border-box;
@@ -25,7 +25,7 @@ a{
 }
 
 body{ 
-    height:1000px
+    height:2000px
 }
 ul{
     list-style-type: none;
@@ -40,6 +40,7 @@ nav{
     position: sticky;
     top:0;
     box-shadow:0 1px #000;
+    transition: 1s;
 }
 
 #zfcakademi-logo{
@@ -96,7 +97,7 @@ nav{
     display: inline-block;
     width: 100%;
     text-align: right;
-    margin-top: 20px;
+    margin-top: 15px;
     animation-name: zfcexit;
     animation-duration: 1s;
 }
@@ -109,7 +110,7 @@ nav{
     width:30px;
     height: auto;
     fill:#ff0000;
-    margin-right: 20px;
+    margin-right: 40px;
 }
 .icon{
     text-align: center;
@@ -188,6 +189,10 @@ main{
    .menu-bars{
     padding: 0;
 }
+.exit-svg{
+    
+    margin-right: 20px;
+}
 }
 
 @media screen and (max-width:450px){
@@ -217,6 +222,10 @@ main{
    .bars{
        width:10px;
    }
+   .exit-svg{
+    
+   width:20px
+}
 }
 @media screen and (max-width:160px){
     html{
@@ -244,9 +253,7 @@ main{
 }
 }
 
-
-    
-    </style>
+        </style>
 </head>
 
 <body id="darkmodejs">
@@ -386,11 +393,11 @@ main{
 
 
     <main>
-        <div class="main"><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero amet nam nulla animi excepturi neque quibusdam dolores molestias ratione, ducimus assumenda fuga illo iure rem ad dignissimos, asperiores nihil est unde mollitia soluta enim. Veritatis, provident laudantium expedita, odit deserunt quas, nostrum minima natus repudiandae est impedit unde neque eaque ea consequuntur non reiciendis ratione quasi sapiente laboriosam quos amet. Repudiandae consequatur illo quisquam incidunt, atque at aliquid fugiat non ut eligendi facilis tempora nobis. Fugit consectetur perferendis repellat labore architecto praesentium quisquam ea facilis sed corporis, maxime quasi, iure quod veniam, ducimus quam ipsa id eaque adipisci soluta molestiae ab! Similique, repellendus! Pariatur harum illo facilis odit libero, voluptatibus explicabo aperiam dolore fugiat quasi distinctio sint beatae sed, cumque velit eos amet? Dolorem unde sed, eveniet beatae, iusto dolores sunt, quia quas expedita quaerat porro inventore fugit. Doloremque nulla a ratione, modi vitae consequatur mollitia numquam reprehenderit qui, corrupti eligendi quisquam fuga quae, voluptate animi accusamus dolore quam. Tenetur consectetur accusamus deleniti ipsum debitis laborum commodi, provident distinctio at possimus, nihil nesciunt? Ipsum aliquam libero asperiores ea.</p></div>
+        <div class="main"><p style="font-size: 30px; text-align: center;">SEN BALSIN SENİ SEVİYORUM</p></div>
     </main>
 
     <script>
-  const darksvg = document.querySelectorAll('.cls-1');
+    const darksvg = document.querySelectorAll('.cls-1');
 const darkitem = document.querySelectorAll('#darkmodejs');
 const nav=document.querySelector('nav');
 const darkicon = document.querySelector('.dark-icon');
@@ -414,11 +421,11 @@ darkicon.addEventListener('click',(e)=>{
     if(localStorage.getItem('darkmode')==='false'){
         localStorage.setItem('darkmode','true');
         for(let i=0;i<darkitem.length;i++){
-            console.log(darkitem[i])
+           
             darkitem[i].style.backgroundColor='#181818';
             darkitem[i].style.color='#fff';} 
         for(let i=0;i<darksvg.length;i++){
-            console.log(darksvg[i])
+         
             darksvg[i].style.fill='#fff';
             darksvg[i].style.stroke='#181818';}
         
@@ -432,11 +439,11 @@ darkicon.addEventListener('click',(e)=>{
     else{
         localStorage.setItem('darkmode','false');
         for(let i=0;i<darkitem.length;i++){
-            console.log(darkitem[i])
+         
             darkitem[i].style.backgroundColor='#fff';
             darkitem[i].style.color='#000';}
             for(let i=0;i<darksvg.length;i++){
-                console.log(darksvg[i])
+               
                 darksvg[i].style.fill='#181818';
                 darksvg[i].style.stroke='#fff';}
                 nav.style.boxShadow='1px 1px #000';
@@ -452,13 +459,13 @@ if(!localStorage.getItem('darkmode')){
     if(localStorage.getItem('darkmode')==='true'){
         
         for(let i=0;i<darkitem.length;i++){
-            console.log(darkitem[i])
+           
             darkitem[i].style.backgroundColor='#181818';
             darkitem[i].style.color='#fff';
             
         }
         for(let i=0;i<darksvg.length;i++){
-            console.log(darksvg[i])
+          
             darksvg[i].style.fill='#fff';
             darksvg[i].style.stroke='#181818';}
             nav.style.boxShadow='1px 1px #fff';
@@ -466,8 +473,26 @@ if(!localStorage.getItem('darkmode')){
     }
 }
 
+window.addEventListener('scroll', function() {
+ 
+  if(window.pageYOffset>600){
+      document.querySelector('nav').style.height='0';
+      document.querySelector('#zfcakademi-logo').style.display='none';
+      document.querySelector('.menu-bars').style.display='none';
+      console.log('selam')
+  }else if(window.pageYOffset<600){
+    document.querySelector('nav').style.height='70px';
+    document.querySelector('#zfcakademi-logo').style.display='block';
+      document.querySelector('.menu-bars').style.display='block';
+  }
+
   
-  </script>
+  });
+
+
+
+
+    </script>
 </body>
 
 </html>
