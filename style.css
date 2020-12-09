@@ -234,6 +234,24 @@ main{
 
 }
 @media screen and (max-width:600px){
+
+    main{
+        width:100%;
+    }
+    .main-item{
+        width: 100%;
+        padding-right: 0;
+    padding-left: 0;
+    }
+    .padding-item{
+        margin-right: 0;
+        margin-left: 0;
+    }
+
+
+}
+
+@media screen and (max-width:600px){
     #zfcakademi-logo{
         width: 280px;
     }
@@ -250,16 +268,7 @@ main{
     
     margin-right: 20px;
 }
-main{
-    width:100%;
-}
-.main-item{
-    width: 100%;
-}
-.padding-item{
-    margin-right: 0;
-    margin-left: 0;
-}
+
 }
 
 @media screen and (max-width:450px){
