@@ -5,319 +5,16 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ZFCAKADEMİ</title>
-
+    <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
 <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
-<style>
-    *{
-    margin:0;
-    padding:0;
-    box-sizing: border-box;
-    cursor: default;
-    font-family: 'Roboto', sans-serif;
-}
-h1{
-    color:white
-}
-html{
-   font-size: 10px;
-}
-
-a{
-    text-decoration: none;
-    color:black;
- 
-}
-
-body{ 
-
-    height: 5000px;
-    transition:1s;
-
-}
-ul{
-    list-style-type: none;
-}
-hr{
-    weight: ;
-}
-nav{
-    width:100%;
-    height: 70px;
-    background-color:#fff;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    position: sticky;
-    top:0;
-    box-shadow:0 1px #000;
-    transition: 1s;
-}
-
-#zfcakademi-logo{
-    fill:#000;
-    stroke:#fff;
-    padding: 2rem;
-    width: 350px;
-}
-.menu{
-    background-color: #000;
-    width: 40%;
-    height: 100vh;
-    position: absolute;
-    right: 0px;
-    top: 0px;
-    z-index: 1;
-    display:none;
-    animation-name: zfcopen;
-    animation-duration: 1s;
-}
-
-@keyframes zfcopen {
-    0%   {height: 0vh;}
-  100% {height: 100vh;}
-  }
-.menu ul{
-    color:#fff;
-    height: auto;
-    padding-top: 15px;
-    padding-bottom: 10px;
-    
-}
-.menu li{
- 
-    margin-bottom: 5px;
-    font-size: 20px;
-    max-width: 100%;
-    text-align: center;
-    border: 1px solid #000;
-}
-.menu ul a{
-    display:block;
-    color:#fff;
-    width: auto;
-    height: auto;
-    padding:1rem 0;
-    
-}
-.menu li:hover {
-    border-color: #fff;
-}
-.exit{
-    display: inline-block;
-    width: 100%;
-    text-align: right;
-    margin-top: 15px;
-    animation-name: zfcexit;
-    animation-duration: 1s;
-}
-@keyframes zfcexit {
-    0%   {height: 100vh;}
-  100% {height: 0vh;}
-  }
-.exit-svg{
-    
-    width:30px;
-    height: auto;
-    fill:#ff0000;
-    margin-right: 40px;
-}
-.icon{
-    text-align: center;
-}
-.icon svg{
-    fill:#ff0000;
-    width: 25px;
-    height: auto;
-    margin-left: 10px;
-    transition: .6s;
-}
-.icon svg:hover{
-    fill:#fff;
-}
-#search-input{
-    width: 60%;
-    height:50px;
-    outline: none;
-    border: none;
-    color:#fff;
-    border-bottom:1px solid #fff;
-    background-color: transparent;
-}
-
-.icon-search{
-    position: relative;
-    top:15px;
-    left:15px;
-}
-.social a,span{
-    margin-right: 20px;
-}
-
-.bars{
-    width: 35px;
-    fill:#000;
-}
-.menu-bars{
-    padding: 20px;
-}
-
-::-webkit-scrollbar {
-  width: 15px;
-  
-}
-::-webkit-scrollbar-thumb {
-  background: #89968d;
-}
-
-main{
-    width:90%;
-    padding-right: 5%;
-    padding-left: 5%;
-    font-size: 20px;
-    font-weight: 400;
-    margin-top: 35px;
-    text-align: justify;
-    line-height: 30px;
-    
-
-}
-.main-item{
-    width: 29%;
-    margin-bottom: 25px;
-    display: inline-block;
-    
-}
-
-.main-item img{
-    max-width: 100%;
-    height: auto;
-    object-fit: cover;
-}
-.contiune{
-    margin-top: 10px;
-    background-color: #fff;
-    outline: none;
-    color:#000;
-    border: 1px solid#000;
-    padding: 20px;
-    transition: .6s;
-    font-size: inherit;
-}
-.contiune:hover{
-    cursor: pointer;
-    background-color: #000;
-    color:#fff;
-}
-.main-item:hover{
-    cursor: pointer;
-}
-.padding-item{
-    margin-right: 6%;
-    margin-left: 6%;
-}
-.left,.right{
-    width: 25px;
-    margin: 10px;
-}
-
-
-
-
-
-
-
-
-@media screen and (max-width:1000px){
-.menu{
-    width: 60%;
-}
-}
-@media screen and (max-width:600px){
-    #zfcakademi-logo{
-        width: 280px;
-    }
-    .menu{
-        width: 100%;
-    }
-   .bars{
-       width:25px;
-   }
-   .menu-bars{
-    padding: 0;
-}
-.exit-svg{
-    
-    margin-right: 20px;
-}
-}
-
-@media screen and (max-width:450px){
-    html{
-        font-size: 9px;
-    }
-    #zfcakademi-logo{
-        width: 200px;
-    }
-
-
-
-}
-@media screen and (max-width:300px){
-
-    #zfcakademi-logo{
-        width: 150px;
-    }
-   .bars{
-       width:15px;
-   }
-}
-@media screen and (max-width:230px){
-    #zfcakademi-logo{
-        width: 100px;
-    }
-   .bars{
-       width:10px;
-   }
-   .exit-svg{
-    
-   width:20px
-}
-}
-@media screen and (max-width:160px){
-    html{
-        font-size: 6px;
-    }
-    #zfcakademi-logo{
-        width: 50px;
-    }
-   .bars{
-       width:7px;
-   }
-   .social a,span{
-    padding:6px;
-
-}
-
-.icon svg{
-    width: 12px;
-    height: auto;
-}
-
-.exit-svg{
-    width: 12px;
-    height: auto;
-}
-}
-
-    </style>
-    </head>
+</head>
 
 <body id="darkmodejs">
 
     <nav id="darkmodejs">
         <div class="logo">
-
+            <a href="#" class="centered">
             <svg id="zfcakademi-logo" data-name="zfcakademi logo" xmlns="http://www.w3.org/2000/svg"
                 viewBox="0 0 292.54 30.37">
                 <defs>
@@ -369,7 +66,7 @@ main{
                 <rect class="cls-1" x="274.93" y="18.35" width="14.06" height="3.19" />
                 <rect class="cls-1" x="277.6" y="0.13" width="8.73" height="3.39" />
                 <rect class="cls-1" x="277.6" y="26.85" width="8.73" height="3.39" />
-            </svg>
+            </svg></a>
         </div>
 
         <span class="menu-bars">
@@ -448,135 +145,146 @@ main{
 
     </nav>
 
-
+<center>
     <main>
-   SENİ SEVİYORUM
-       
+   
+        <div class="main-item">
+            <img src="deneme2.png" alt="images">
+            <h2>Lorem ipsum dolor sit amet.</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi sapiente dignissimos sint fuga fugit beatae, pariatur sit hic! Dolore similique earum voluptatem impedit?</p>
+            <button class="contiune">Devamını Oku</button>
+   
+        </div>
+        <div class="main-item padding-item">
+            <img src="deneme2.png" alt="images">
+            <h2>Lorem ipsum dolor sit amet.</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi sapiente dignissimos sint fuga fugit beatae, pariatur sit hic! Dolore similique earum voluptatem impedit?</p>
+            <button class="contiune">Devamını Oku</button>
+   
+        </div>
+        <div class="main-item">
+            <img src="deneme2.png" alt="images">
+            <h2>Lorem ipsum dolor sit amet.</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi sapiente dignissimos sint fuga fugit beatae, pariatur sit hic! Dolore similique earum voluptatem impedit?</p>
+            <button class="contiune">Devamını Oku</button>
+   
+        </div>
+        <div class="main-item">
+            <img src="deneme2.png" alt="images">
+            <h2>Lorem ipsum dolor sit amet.</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi sapiente dignissimos sint fuga fugit beatae, pariatur sit hic! Dolore similique earum voluptatem impedit?</p>
+            <button class="contiune">Devamını Oku</button>
+   
+        </div>
+        <div class="main-item padding-item">
+            <img src="deneme2.png" alt="images">
+            <h2>Lorem ipsum dolor sit amet.</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi sapiente dignissimos sint fuga fugit beatae, pariatur sit hic! Dolore similique earum voluptatem impedit?</p>
+            <button class="contiune">Devamını Oku</button>
+   
+        </div>
+        <div class="main-item">
+            <img src="deneme2.png" alt="images">
+            <h2>Lorem ipsum dolor sit amet.</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi sapiente dignissimos sint fuga fugit beatae, pariatur sit hic! Dolore similique earum voluptatem impedit?</p>
+            <button class="contiune">Devamını Oku</button>
+   
+        </div>
+        <div class="main-item">
+            <img src="deneme2.png" alt="images">
+            <h2>Lorem ipsum dolor sit amet.</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi sapiente dignissimos sint fuga fugit beatae, pariatur sit hic! Dolore similique earum voluptatem impedit?</p>
+            <button class="contiune">Devamını Oku</button>
+   
+        </div>
+        <div class="main-item padding-item">
+            <img src="deneme2.png" alt="images">
+            <h2>Lorem ipsum dolor sit amet.</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi sapiente dignissimos sint fuga fugit beatae, pariatur sit hic! Dolore similique earum voluptatem impedit?</p>
+            <button class="contiune">Devamını Oku</button>
+   
+        </div>
+        <div class="main-item">
+            <img src="deneme2.png" alt="images">
+            <h2>Lorem ipsum dolor sit amet.</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi sapiente dignissimos sint fuga fugit beatae, pariatur sit hic! Dolore similique earum voluptatem impedit?</p>
+            <button class="contiune">Devamını Oku</button>
    
         </div>
         <hr>
-        <center>
+            <div class="contiune-main">
+
+<a href="#" class="centered">
         <svg aria-hidden="true" focusable="false" data-icon="arrow-left" class="left" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path fill="currentColor" d="M257.5 445.1l-22.2 22.2c-9.4 9.4-24.6 9.4-33.9 0L7 273c-9.4-9.4-9.4-24.6 0-33.9L201.4 44.7c9.4-9.4 24.6-9.4 33.9 0l22.2 22.2c9.5 9.5 9.3 25-.4 34.3L136.6 216H424c13.3 0 24 10.7 24 24v32c0 13.3-10.7 24-24 24H136.6l120.5 114.8c9.8 9.3 10 24.8.4 34.3z"></path></svg>
-      
+    </a>
+<a href="#" class="centered">
+        <svg id="zfcakademi-logo" data-name="zfcakademi logo" xmlns="http://www.w3.org/2000/svg"
+        viewBox="0 0 292.54 30.37">
+        <defs>
+            <style>
+                .cls-1 {
+                    stroke-miterlimit: 10;
+                    stroke-width: 0.25px;
+                }
+            </style>
+        </defs>
+        <polygon class="cls-1"
+            points="2.8 10.13 0.5 5.68 18.15 5.68 17.56 3.85 29.89 9.82 21.2 8.87 21.62 10.01 2.8 10.13" />
+        <polygon class="cls-1"
+            points="22.92 10.27 32.1 10.85 25.26 12.89 25.66 13.89 13.33 16.34 7.92 22.02 17.96 22.02 20.7 26.52 0.13 26.52 0.13 22.17 10.12 11.7 23.39 11.39 22.92 10.27" />
+        <path class="cls-1"
+            d="M47.74-3.63s-10.49-2-9.87,10.42A11.29,11.29,0,0,0,34.79,9H38l.13,9.21s-.8,3-3,1.15l-3-.05v1.72s3,4.21,7.82,0a4.61,4.61,0,0,0,1.6-2.75c.59-2.14.17-9.57.17-9.57h2.71l1.47-2.65L41.55,6S41.09-1.2,46-1.59Z"
+            transform="translate(0.41 5.6)" />
+        <path class="cls-1"
+            d="M65.69,22.12l-5.88-.19s-9.61-2.37-9.36-11.08l.13-4.12S52.16-2,59.24-2.73L66-2.95l-.19,8-4.67.11s-7.33,3.13-.42,8.19l4.88.41Z"
+            transform="translate(0.41 5.6)" />
+        <path class="cls-1"
+            d="M86.77-2.38,78.3,20.12l-2.47.1s-.75.79,0,1.33H87.21s1.27-.58,0-1.61l-7-.09L87.92-1l3.27-.14L83.43,19.66l1.81,0,6-16.52,7.61,16.7-2.42,0s-1.31.83,0,1.7l11.31-.05s1.24-.72,0-1.47l-1,0L95.91-2.38Z"
+            transform="translate(0.41 5.6)" />
+        <polygon class="cls-1" points="88.22 18.38 95.85 18.38 96.76 20.4 87.55 20.4 88.22 18.38" />
+        <path class="cls-1"
+            d="M151.2-2.38l-8.47,22.5-2.47.1s-.75.79,0,1.33h11.37s1.28-.58,0-1.61l-7-.09L152.35-1l3.27-.14-7.76,20.85,1.81,0,6-16.52,7.61,16.7-2.42,0s-1.31.83,0,1.7l11.3-.05s1.25-.72,0-1.47l-1,0L160.34-2.38Z"
+            transform="translate(0.41 5.6)" />
+        <polygon class="cls-1" points="152.65 18.38 160.28 18.38 161.19 20.4 151.98 20.4 152.65 18.38" />
+        <path class="cls-1"
+            d="M110.91-2.43h11.61a1,1,0,0,1,0,1.38L121.27-1s-1,.6-1,1l0,8.19,9.2-7.77a1,1,0,0,0-.7-1.56l-1.54,0s-.38-1,0-1.34h9.4a.79.79,0,0,1,0,1.4l-1.36.12L125.45,7,136.3,20.17h.77s1.61.48,0,1.43H125.78s-1.39-.64,0-1.52l1.63-.07-7.25-9.33.14,8.82a5.37,5.37,0,0,1,.91.55l1.07.08s1.72.74,0,1.47H111a1,1,0,0,1-.11-1.49h2a2.38,2.38,0,0,1,.78-.76l0-19.61S113.05-1,112.48-1H111S109.83-1.56,110.91-2.43Z"
+            transform="translate(0.41 5.6)" />
+        <path class="cls-1"
+            d="M187.42-2.84V22H178s-1.21-.64,0-1.49l1.8-.06a2,2,0,0,0,1-.87l0-20a1.65,1.65,0,0,0-1.17-1h-1.89s-.94-.84,0-1.42Z"
+            transform="translate(0.41 5.6)" />
+        <path class="cls-1"
+            d="M187.51-2.75c2.77-.48,13.11-1.76,14.9,10.72,1.85,13-11.78,14.77-14.71,14.12l-.07-2.48s7.46,2.77,7.41-9.94-7.4-9.85-7.4-10.31Z"
+            transform="translate(0.41 5.6)" />
+        <path class="cls-1"
+            d="M205.45-3.37h21.37V4.48s-1.14,1.45-1.79,0c0,0-.68-4.5-4.61-5.18h-5l0,8.88s4.27.82,4.33-5.61c0,0,1.5-.42,1.62.37l.05,13s-1.08,1.11-1.79,0c0,0,0-5.76-4.28-5.39l.16,8.93s.21.9.81.82l4.68,0s5.23-1.6,6.06-6.47c0,0,1.14-.55,1.29.4l-.89,8.33h-22s-1.29-.66,0-1.56h2.24s.51-.13.88-1L208.41-.67a1.92,1.92,0,0,0-1.55-1.23l-1.38,0A.79.79,0,0,1,205.45-3.37Z"
+            transform="translate(0.41 5.6)" />
+        <path class="cls-1"
+            d="M232.16-1.6s2.62-.16,2.89,1.27V19.59a2.38,2.38,0,0,1-2.08,1,.84.84,0,0,0,0,1.68l7.57-.07s1.41-.78,0-1.56l-1.85-.08s-1-.52-1.16-1.21l0-17L246,22.08l1.07,0,8.58-20.18V19.5a2.2,2.2,0,0,1-.49.63c-.47.39-.91.15-1.39.53a1.07,1.07,0,0,0-.46.79,1.09,1.09,0,0,0,.47.78h11.52s1-.59,0-1.66l-2,0a3.27,3.27,0,0,1-1-.8V-.35a2.1,2.1,0,0,1,.93-1.14l1.9,0s1.36-.83,0-1.53h-9.95L248.92,12.1,242.47-3.06H232.18S230.94-2.29,232.16-1.6Z"
+            transform="translate(0.41 5.6)" />
+        <rect class="cls-1" x="271.51" y="3.51" width="20.91" height="5.27" />
+        <rect class="cls-1" x="271.51" y="21.56" width="20.91" height="5.27" />
+        <rect class="cls-1" x="274.93" y="8.78" width="14.06" height="3.19" />
+        <rect class="cls-1" x="274.93" y="11.97" width="14.06" height="3.19" />
+        <rect class="cls-1" x="274.93" y="15.16" width="14.06" height="3.19" />
+        <rect class="cls-1" x="274.93" y="18.35" width="14.06" height="3.19" />
+        <rect class="cls-1" x="277.6" y="0.13" width="8.73" height="3.39" />
+        <rect class="cls-1" x="277.6" y="26.85" width="8.73" height="3.39" />
+    </svg>
+</a>
+
+    <a href="#" class="centered">
 
         <svg aria-hidden="true" focusable="false" data-icon="arrow-right" class="right" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path fill="currentColor" d="M190.5 66.9l22.2-22.2c9.4-9.4 24.6-9.4 33.9 0L441 239c9.4 9.4 9.4 24.6 0 33.9L246.6 467.3c-9.4 9.4-24.6 9.4-33.9 0l-22.2-22.2c-9.5-9.5-9.3-25 .4-34.3L311.4 296H24c-13.3 0-24-10.7-24-24v-32c0-13.3 10.7-24 24-24h287.4L190.9 101.2c-9.8-9.3-10-24.8-.4-34.3z"></path></svg>
-    </center>
+    </a>
+    </div>
         <hr>
 
 
 
 
     </main>
-
-    <script>
-    const darksvg = document.querySelectorAll('.cls-1');
-const darkitem = document.querySelectorAll('#darkmodejs');
-const nav=document.querySelector('nav');
-const darkicon = document.querySelector('.dark-icon');
-const menu = document.querySelector('.menu');
-
-document.querySelector('.menu-bars').addEventListener('click',function(){
-   
-    document.querySelector('.menu').style.display='block';
-})
-
-document.querySelector('.exit').addEventListener('click',function(){
-    document.querySelector('.menu').style.display='none'
-})
-
-window.addEventListener('keydown',function(e) {
-    if(e.keyCode===27){
-        document.querySelector('.menu').style.display='none'
-    }
-}
-)
-darkicon.addEventListener('click',(e)=>{
-    
-    if(localStorage.getItem('darkmode')==='false'){
-        localStorage.setItem('darkmode','true');
-    
-        for(let i=0;i<darkitem.length;i++){
-           
-            darkitem[i].style.backgroundColor='#181818';
-            darkitem[i].style.color='#fff';} 
-        for(let i=0;i<darksvg.length;i++){
-         
-            darksvg[i].style.fill='#fff';
-            darksvg[i].style.stroke='#181818';}
-        
-            nav.style.boxShadow='1px 1px #fff';
-            darkicon.style.fill='#fff';
-        
-        }
-        
-        
-    
-    else{
-        localStorage.setItem('darkmode','false');
-        for(let i=0;i<darkitem.length;i++){
-         
-            darkitem[i].style.backgroundColor='#fff';
-            darkitem[i].style.color='#000';}
-            for(let i=0;i<darksvg.length;i++){
-               
-                darksvg[i].style.fill='#181818';
-                darksvg[i].style.stroke='#fff';}
-                nav.style.boxShadow='1px 1px #000';
-                darkicon.style.fill='#ff0000';
-    }
-e.preventDefault();
-})
-
-
-if(!localStorage.getItem('darkmode')){
-    localStorage.setItem('darkmode','false')
-}else{
-    if(localStorage.getItem('darkmode')==='true'){
-      
-        for(let i=0;i<darkitem.length;i++){
-           
-            darkitem[i].style.backgroundColor='#181818';
-            darkitem[i].style.color='#fff';
-            
-        }
-        for(let i=0;i<darksvg.length;i++){
-          
-            darksvg[i].style.fill='#fff';
-            darksvg[i].style.stroke='#181818';}
-            nav.style.boxShadow='1px 1px #fff';
-            darkicon.style.fill='#fff';
-    }
-}
-var prevScrollpos = window.pageYOffset;
-window.onscroll = function() {
-var currentScrollPos = window.pageYOffset;
-  if (prevScrollpos > currentScrollPos) {
-    document.querySelector('nav').style.top='0';
-    document.querySelector('#zfcakademi-logo').style.display='block';
-      document.querySelector('.menu-bars').style.display='block';
-  
-} else {
-     document.querySelector('nav').style.top='-71px';
-      document.querySelector('#zfcakademi-logo').style.display='none';
-      document.querySelector('.menu-bars').style.display='none';
-    if(menu.style.display=='block'){
-        document.querySelector('nav').style.top='0';
-        document.querySelector('#zfcakademi-logo').style.display='block';
-      document.querySelector('.menu-bars').style.display='block';
-    }
-}
-  prevScrollpos = currentScrollPos;
-}
-
-
-
-
-
-
-
-
-
-    </script>
+</center>
+    <script src="javascript.js"></script>
 </body>
 
 </html>
