@@ -165,8 +165,6 @@ main{
     font-weight: 400;
     margin-top: 35px;
     line-height: 30px;
-
-
 }
 .main-item{
     width: 29%;
@@ -251,6 +249,9 @@ main{
 .exit-svg{
     
     margin-right: 20px;
+}
+main{
+    width:100%;
 }
 .main-item{
     width: 100%;
