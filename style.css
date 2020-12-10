@@ -177,6 +177,7 @@ main{
     max-width: 100%;
     height: auto;
     object-fit: cover;
+    text-align: center;
 }
 .contiune{
     margin-top: 10px;
@@ -233,7 +234,7 @@ main{
 
 
 }
-@media screen and (max-width:600px){
+@media screen and (max-width:750px){
 
     main{
         width:100%;
@@ -247,13 +248,15 @@ main{
         margin-right: 0;
         margin-left: 0;
     }
-
+    *:hover{
+        cursor: default;
+    }
 
 }
 
 @media screen and (max-width:600px){
     #zfcakademi-logo{
-        width: 280px;
+        width: 300px;
     }
     .menu{
         width: 100%;
@@ -276,7 +279,7 @@ main{
         font-size: 9px;
     }
     #zfcakademi-logo{
-        width: 200px;
+        width: 250px;
     }
 
 
@@ -285,7 +288,7 @@ main{
 @media screen and (max-width:300px){
 
     #zfcakademi-logo{
-        width: 150px;
+        width: 170px;
     }
    .bars{
        width:15px;
